@@ -253,23 +253,20 @@ int main() {
 
     // Mostrar resultados
     cout << "Numero de resultados: " << resultados.size() << "." << endl;
-    /*cout << "Situados en los caracteres -> ";
+    cout << "Situados en los caracteres -> ";
     for (int i = 0; i < resultados.size(); ++i) {
         if (i == resultados.size() - 1) {
             cout << "y ";
         }
         cout << resultados[i] << ((i == resultados.size() - 1) ? ".\n" : ", ");
-    }
-    cout << endl;*/
+
+    cout << endl;
     auto duration_ms = chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count();
     cout << "La rutina demoro " << duration_ms << " milisegundos." << endl;
 
     return 0;
 }
 
-
-// con el '&' delante de una variable, conseguimos que en cada llamada a una funcion, no se le pase como parametro una copia
-// de esa variable, sino que se le pase el objeto original para que, si se modifica, el cambio permanezca una vez termine la llamada a la funcion
 
 
 
